@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var net = require('net'),
 	ranges = process.argv.slice(2),
 	callback = {
@@ -20,7 +22,7 @@ var net = require('net'),
 		var format = /(\d+)(?:-(\d+))?/, // "n-m" or just "n"
 			matches = range.trim().match(format),
 			min = +matches[1],
-			max = +matches[2] || min,
+			max = +matches[2] || (+matches[2] !== 0 && min),
 			valid = !isNaN(min) && !isNaN(max) && max >= min;
 		if (!valid) console.log('Warning: Invalid input: %s', range);
 		return valid ? { min: min, count : max - min } : range;
