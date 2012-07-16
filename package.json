@@ -1,0 +1,21 @@
+{
+	"name": "listenrange",
+	"version": "0.1.0",
+	"description": "Simple tool to listen on lots of ports.",
+	"keywords": ["tcp", "socket", "ports", "listen", "range", "scan"],
+	"homepage": "https://github.com/cbas/listenrange",
+	"bugs": {
+		"url" : "http://github.com/cbas/listenrange/issues"
+	},
+	"author": [{
+		"name": "Sebastiaan Deckers",
+		"email": "sebdeckers83@gmail.com"
+	}],
+	"bin": "./listenrange.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/cbas/listenrange.git"
+	},
+	"dependencies": {
+	}
+}
