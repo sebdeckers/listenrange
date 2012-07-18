@@ -39,5 +39,5 @@ var net = require('net'),
 
 ranges
 	.map(parseRange)
-	.filter( function (range) { return typeof range !== 'string'; })
+	.filter(function (range) { return typeof range !== 'string'; })
 	.forEach(listenOnRange);
